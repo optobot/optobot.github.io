@@ -1,0 +1,55 @@
+.b{
+    padding-top: 200px;
+	padding-bottom: 100px;
+}
+
+.article {
+    background: rgb(255, 255, 255);
+    display: block;
+    max-width: 900px;
+    margin: 0 auto; /*居中*/
+    BORDER-BOTTOM: #ddd 1px solid;
+    BORDER-LEFT: #ddd 1px solid;
+    BORDER-TOP: #ddd 1px solid;
+    BORDER-RIGHT: #ddd 1px solid;
+    border-radius: 10px;
+    -webkit-box-sizing: inset 0 0 2px 2px rgba(83, 82, 82, 0.2) ;/*2px的羽化加2px的扩充*/
+    box-shadow: inset 0 0 2px 2px rgba(83,82,82,.2) 
+}
+
+.article H1 {
+    BORDER-BOTTOM: #49b2e3 3px solid;
+    text-align: center;
+    FONT: 18px/40px 'MicroSoft YaHei';
+    MARGIN-BOTTOM: 10px;
+}
+
+.article P {
+    PADDING-BOTTOM: 5px;
+    TEXT-INDENT: 28px;
+    PADDING-LEFT: 15px;
+    PADDING-RIGHT: 15px;
+    FONT: 14px/25px 'MicroSoft YaHei';
+    COLOR: #666;
+    PADDING-TOP: 5px;
+}
+
+.imgbox{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.article_table {
+	MARGIN-LEFT: 20px
+}
+
+.article_table TABLE {
+	WIDTH: 100%
+}
+
+.article_table TH {
+	BORDER-BOTTOM: #ddd 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT: bold 14px/20px 'MicroSoft YaHei'; BORDER-TOP: #e39349 3px solid; PADDING-TOP: 5px
+}
+.article_table TD {
+	BORDER-BOTTOM: #ddd 1px solid; TEXT-ALIGN: center; PADDING-BOTTOM: 6px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 6px
+}
