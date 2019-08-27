@@ -251,16 +251,6 @@
 
 	<div id="comment"></div>
 
-	var gitment = new Gitment({
-		id: '页面 ID', 
-		owner: '你的 GitHub ID',
-		repo: '存储评论的 repo',
-		oauth: {
-		  client_id: '8209c83f1a9c6e0b5880',
-		  client_secret: 'd2967f081036e7051ca830f9ae77698da234be1c',
-		},
-	  })
-	  gitment.render('comment')
 
 	<!--====== Jquery & Javascripts files  ======-->
 	<script src="js/jquery.nav.min.js"></script>
@@ -279,6 +269,20 @@
 	<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 
+	<script>
+		var gitment = new Gitment({
+		id: '页面 ID', 
+		owner: '你的 GitHub ID',
+		repo: '存储评论的 repo',
+		oauth: {
+		  client_id: '8209c83f1a9c6e0b5880',
+		  client_secret: 'd2967f081036e7051ca830f9ae77698da234be1c',
+		},
+	  })
+	  gitment.render('comment')
+	
+	
+	</script>
 	
 	<script>
 		$(window).load(function() {
