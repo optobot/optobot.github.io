@@ -31,6 +31,10 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/sub.css">
+
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+
 	
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<!--[if lt IE 9]>
@@ -244,6 +248,19 @@
 	</footer>
 	<!-- Footer section end -->
 	
+
+	<div id="comment"></div>
+
+	var gitment = new Gitment({
+		id: '页面 ID', 
+		owner: '你的 GitHub ID',
+		repo: '存储评论的 repo',
+		oauth: {
+		  client_id: '8209c83f1a9c6e0b5880',
+		  client_secret: 'd2967f081036e7051ca830f9ae77698da234be1c',
+		},
+	  })
+	  gitment.render('comment')
 
 	<!--====== Jquery & Javascripts files  ======-->
 	<script src="js/jquery.nav.min.js"></script>
