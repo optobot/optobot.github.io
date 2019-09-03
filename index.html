@@ -41,7 +41,7 @@
 	<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 	-->
 
-	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery-1.11.0.min.js"></script>
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -62,7 +62,7 @@
 			<div class="header-warp">
 				<!-- Site Logo -->
 				<a href="#" class="site-logo">
-					<img src="img/logo.png" alt="">
+					<img class="lazy" src="img/logo.png" alt="">
 				</a>
 				<!-- Site Menu -->
 				<div class="responsive-switch"><i class="fa fa-bars"></i></div>
@@ -151,7 +151,7 @@
 				<!-- item -->				
 				<div class="col-md-6">
 					<a class="work-item" href="https://optobot.github.io/main/2018/12/30/article/1/">
-						<img src="img/works/8.jpg" alt="">
+						<img class="lazy" src="img/works/8.jpg" alt="">
 						<i class="ti-link"></i>
 						<div class="work-info">
 							<h3><span>【转载】基于深度学习的目标检测发展</span></h3>
@@ -161,7 +161,7 @@
 				</div>
 				<div class="col-md-6">
 					<a class="work-item" href="https://optobot.github.io/main/2018/12/30/article/2/">
-						<img src="img/5.png" alt="">
+						<img class="lazy" src="img/5.png" alt="">
 						<i class="ti-link"></i>
 						<div class="work-info">
 							<h3><span>【转载】浅析自动驾驶技术</span></h3>
@@ -170,7 +170,7 @@
 				</div>
 				<div class="col-md-6">
 					<a class="work-item" href="https://optobot.github.io/main/2018/12/30/article/3/">
-						<img src="img/works/10.jpg" alt="">
+						<img class="lazy" src="img/works/10.jpg" alt="">
 						<i class="ti-link"></i>
 						<div class="work-info">
 							<h3><span>【转载】自动驾驶 vs 机器人环境感知</span></h3>
@@ -194,7 +194,7 @@
 				<li>
 					<div style="background:#333;">
 						<a href="http://sjd.cust.edu.cn/" target="_blank">
-							<img src="img/1.png">
+							<img class="lazy" src="img/1.png">
 							<p class="text-center"><strong>全国征兵网</strong></p>
 						</a>
 					</div>
@@ -202,7 +202,7 @@
 				<li>
 					<div style="background:#333;">
 						<a href="http://sjd.cust.edu.cn/" target="_blank">
-							<img src="img/2.png">
+							<img class="lazy" src="img/2.png">
 							<p class="text-center"><strong>党的十九大专题网站</strong></p>
 						</a>
 					</div>
@@ -210,7 +210,7 @@
                 <li>
 					<div style="background:#333;">
 						<a href="http://lxyz.cust.edu.cn" target="_blank">
-							<img src="img/3.png">
+							<img class="lazy" src="img/3.png">
 							<p class="text-center"><strong>“两学一做”学习教育</strong></p>
 						</a>
 					</div>
@@ -218,7 +218,7 @@
            	    <li>
 					<div style="background:#333;">
 						<a href="http://wdh.cust.edu.cn/" target="_blank">
-							<img src="img/4.png">
+							<img class="lazy" src="img/4.png">
 							<p class="text-center"><strong>纪念王大珩院士诞辰100周年专题 </strong></p>
 						</a>
 					</div>
@@ -239,7 +239,7 @@
 				<a href="#" class="behance wow fadeInDown" data-wow-delay="0.8s"><i class="fa fa-search"></i></a>
 			</div>
 			<div class="anti-fruad-container">
-				<img class="footer-qualifications-item-icon" src="img/location.jpg">
+				<img class="footer-qualifications-item-icon lazy" src="img/location.jpg">
 				<span class="anti-fruad-text" style="color:white;">
 					长春理工大学东校区三教402A创新实验室
 				</span>
@@ -286,18 +286,18 @@
 
 	<script src="js/jquery.lazyload.js"></script>
 	<script>
-		$("img").lazyload({
+		$("img.lazy").lazyload({
   		placeholder : "img/white.gif", //用图片提前占位
     	// placeholder,值为某一图片路径.此图片用来占据将要加载的图片的位置,待图片加载时,占位图则会隐藏
   		effect: "fadeIn", // 载入使用何种效果
     	// effect(特效),值有show(直接显示),fadeIn(淡入),slideDown(下拉)等,常用fadeIn
- 		threshold: 200, // 提前开始加载
+ 		//threshold: 200, // 提前开始加载
     	// threshold,值为数字,代表页面高度.如设置为200,表示滚动条在离目标位置还有200的高度时就开始加载图片,可以做到不让用户察觉
   		event: 'mouseover',  // 事件触发时才加载
     	// event,值有click(点击),mouseover(鼠标划过),sporty(运动的),foobar(…).可以实现鼠标莫过或点击图片才开始加载,后两个值未测试…
   		container: $("#container"),  // 对某容器中的图片实现效果
     	// container,值为某容器.lazyload默认在拉动浏览器滚动条时生效,这个参数可以让你在拉动某DIV的滚动条时依次加载其中的图片
-  		failurelimit : 10 // 图片排序混乱时
+  		//failurelimit : 10 // 图片排序混乱时
      	// failurelimit,值为数字.lazyload默认在找到第一张不在可见区域里的图片时则不再继续加载,但当HTML容器混乱的时候可能出现可见区域内图片并没加载出来的情况,failurelimit意在加载N张可见区域外的图片,以避免出现这个问题.
 	});
 	</script>
